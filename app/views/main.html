@@ -1,9 +1,17 @@
 <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+  <h1>PAC File Tester</h1>
+  <h3>GOOD FOR TESTING PAC FILES, PROBABLY</h3>
+</div>
+<div class="row">
+  <div class="span3">
+    <form>
+      <label for="pac">PAC File:</label>
+      <textarea name="pac" type="text" ng-model="pac"></textarea>
+      <label for="domain" >Domain:</label>
+      <input name="domain" ng-model="domain" type="text"></input>
+      <label for="source-ip">Source IP Address</label>
+      <input name="source-ip" ng-model="source-ip" type="text"></input>
+    </form>
+    <button class="btn btn-large btn-primary" ng-click="check()">Test!</button>
+  </div>
 </div>
